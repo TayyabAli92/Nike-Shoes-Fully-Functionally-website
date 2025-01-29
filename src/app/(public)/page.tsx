@@ -48,7 +48,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center w-full">
         <Image
-          src="/image.png"
+          src="/Image-00.png"
           alt="Image"
           width={1260}
           height={977}
