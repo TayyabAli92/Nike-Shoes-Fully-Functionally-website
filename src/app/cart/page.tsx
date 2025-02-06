@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useAppDispatch, useAppSelector } from "../../../../hooks/redux";
-import { decrementQuantity, getCart, incrementQuantity, removeFromTheCart } from "../../../../redux/cartSlice";
-import { Product } from "../../../../types/products";
 import { urlFor } from "@/sanity/lib/image";
+import { useAppDispatch, useAppSelector } from "../../../hooks/redux";
+import { Product } from "../../../types/products";
+import { decrementQuantity, getCart, incrementQuantity, removeFromTheCart } from "../../../redux/cartSlice";
 
 export default function Bag() {
   const productCart = useAppSelector(getCart);

@@ -1,15 +1,15 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import "../globals.css";
+import "./globals.css";
 import ShopCard from "@/components/Shose_Card";
 import MenWomenCard from "@/components/Men_Women_Card";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { ClothesCard } from "@/components/Men_Women_Card";
 import { useEffect, useState } from "react";
-import { Product } from "../../../types/products";
 import { client } from "@/sanity/lib/client";
 import { allProducts } from "@/sanity/lib/quries";
+import { Product } from "../../types/products";
 
 export default function Home() {
 
