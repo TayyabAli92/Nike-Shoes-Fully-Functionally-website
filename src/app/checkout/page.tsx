@@ -3,11 +3,11 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
-import { useAppSelector } from "../../../hooks/redux";
-import { Product } from "../../../types/products";
-import { getCart } from "../../../redux/cartSlice";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useAppSelector } from "../../../hooks/redux";
+import { getCart } from "../../../redux/cartSlice";
+import { Product } from "../../../types/products";
 
 export default function Checkout() {
   const productCart = useAppSelector(getCart);
