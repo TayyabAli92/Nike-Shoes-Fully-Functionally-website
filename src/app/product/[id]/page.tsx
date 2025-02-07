@@ -2,11 +2,11 @@
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import { useEffect, useState } from "react";
-import { Product } from "../../../../../types/products";
+import { Product } from "../../../../types/products";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
-import { useAppDispatch } from "../../../../../hooks/redux";
-import { addToCart } from "../../../../../redux/cartSlice";
+import { useAppDispatch } from "../../../../hooks/redux";
+import { addToCart } from "../../../../redux/cartSlice";
 
 const Page = () => {
   const dispatch = useAppDispatch();
